@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int totalSegundos, horas, minutos, segundos;
+
+    cout << "Ingrese los segundos: ";
+    cin >> totalSegundos;
+
+    if (totalSegundos < 0) {
+        cout << "Error: valor negativo.";
+    } else {
+        horas = totalSegundos / 3600;
+        minutos = (totalSegundos % 3600) / 60;
+        segundos = totalSegundos % 60;
+
+        cout << "Horas: " << horas << endl;
+        cout << "Minutos: " << minutos << endl;
+        cout << "Segundos: " << segundos << endl;
+    }
+
+    return 0;
+}
